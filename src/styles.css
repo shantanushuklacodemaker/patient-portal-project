@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+.mat-toolbar {
+  padding: 0 20px; /* Add padding to the toolbar */
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 15px; /* Add margin between links */
+  padding: 10px 15px; /* Add padding to links */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-link:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Change background color on hover */
+}
+
+a {
+  cursor: pointer;
+}

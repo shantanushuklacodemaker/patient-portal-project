@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>Patient Portal</span>
+  <span class="spacer"></span>
+  <a routerLink="/contact" class="nav-link">Contact</a>
+  <a routerLink="/about" class="nav-link">About Us</a>
+  <a *ngIf="!authToken" routerLink="/login" class="nav-link">Login</a>
+  <a *ngIf="authToken" class="nav-link" (click)="logout($event)">Logout</a>
+</mat-toolbar>

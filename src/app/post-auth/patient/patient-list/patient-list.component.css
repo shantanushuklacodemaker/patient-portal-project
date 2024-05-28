@@ -1,0 +1,38 @@
+.full-page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-card {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-header-cell,
+.mat-cell {
+  padding: 12px 16px;
+}
+
+.mat-header-row {
+  background-color: #f0f0f0;
+}
+
+.name-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.name-link:hover {
+  text-decoration: underline;
+}
+
+.mat-header-row {
+  background-color: #f0f0f0;
+}

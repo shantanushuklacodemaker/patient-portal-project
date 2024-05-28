@@ -1,0 +1,43 @@
+<div class="container">
+  <form
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit($event)"
+    class="login-form"
+  >
+    <mat-form-field appearance="fill">
+      <mat-label>Mobile</mat-label>
+      <input matInput formControlName="mobile" placeholder="Mobile" />
+
+      <mat-error
+        *ngIf="
+          form.mobile.invalid && (form.mobile.dirty || form.mobile.touched)
+        "
+      >
+        <span *ngIf="form.mobile.errors.required">Mobile is required</span>
+        <span *ngIf="form.mobile.errors.contact">Invalid phone number</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        formControlName="password"
+        type="password"
+        placeholder="Password"
+      />
+      <mat-error
+        *ngIf="
+          form.password.invalid &&
+          (form.password.dirty || form.password.touched)
+        "
+      >
+        Password is required
+      </mat-error>
+    </mat-form-field>
+
+    <div class="button-container">
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </div>
+  </form>
+</div>

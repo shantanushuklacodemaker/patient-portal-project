@@ -1,0 +1,13 @@
+<div class="patient-detail-container mat-elevation-z2">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title
+        >{{ patient?.firstname }} {{ patient?.lastname }}</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Mobile:</strong> {{ patient?.mobile }}</p>
+      <p><strong>Zipcode:</strong> {{ patient?.zipcode || "-" }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,3 +1,17 @@
+# Install Node.js and npm
+
+Angular projects rely on Node.js and npm for package management. Install them if you haven't already. You can download them from the official website: Node.js.
+
+# Install Angular CLI
+
+Angular CLI (Command Line Interface) is a powerful tool for initializing, developing, scaffolding, and maintaining Angular applications. Install it globally using npm:
+
+`npm install -g @angular/cli`
+
+# Install Angular CLI
+
+Angular CLI (Command Line Interface) is a powerful tool for initializing, developing, scaffolding, and maintaining Angular applications. Install it globally using npm:
+
 # PatientPortal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
